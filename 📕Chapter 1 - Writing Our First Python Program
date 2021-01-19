@@ -1,0 +1,8 @@
+🔴 Writing Our First Python Program 
+
+# first program to add two numbers 
+
+a = 10  # store 10 into variable a 
+b = 15  # store 15 into variable b 
+c = a + b  # add 10 and 15 and store into variable c
+print(''Sum = '', c)  # display the sum
