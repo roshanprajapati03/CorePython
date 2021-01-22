@@ -1,0 +1,202 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\qc\b\f0\fs30\lang16393 DATATYPE IN PYTHON \par
+
+\pard\b0\fs24\par
+A datatype represents the type of data stroed a variable or memory. The datatypes which  are already available  in Python language are call Built-in datatypes. The datatypes which  can be by the programmers are called User-defined datatypes.\par
+\fs22\par
+
+\pard\qc\b\fs30 Built-in datatypes \fs24\par
+
+\pard\b0\par
+the built-in datatypes are of five types:\par
+1 None Type\par
+2 Numeric Types\par
+3 Sequences\par
+4 Sets\par
+5 Mapping \par
+
+\pard\qc\b\fs30 1.The None Type \par
+
+\pard\b0\fs22\par
+\fs24 in Python, the 'None' datatype represents an object  that does not contain any value. In language java it called 'null' object. But in python it called 'None' object in a Python program  maximum  of only one 'None' object is provide One of the uses of 'None' is that it used a inside a function as a default  value of the argument when calling the function if no value is passed then the default value will be taken as 'None' if some values is passed to the function then that value is used by the function in Boolean expressions 'None' datatype represents 'False'\par
+\fs22\par
+
+\pard\qc\b\fs30 2.Numeric Types\par
+
+\pard\b0\fs22\par
+\fs24 the numeric types represent numbers There are three sub types:\par
+1.int \par
+2.float \par
+3.complex\par
+\fs22\par
+
+\pard\qc\b\fs24 - int Datatype\par
+\par
+
+\pard\b0 The int datatpe represents an integer number An integer number is a number without any decimal point or fraction part For example, 200, -50, 0, 99989989899, etc are treated as integer numbers Now, let's store an integer numbers -75 into variable 'a' \fs22\par
+\fs24\par
+\b a = -75\par
+\b0\par
+Here 'a' is called int type variable since it is storing -75 which is an integer value in python there is no limit for the size an int datatype It can store very large integer number conveniently.\par
+\fs22\par
+
+\pard\qc\b\fs24 - float datatype\par
+\par
+
+\pard\b0 the float datatype represents floating point number  A floating point number is a number that contains a decimal point For example, 0.5, -3.4586, 246.2135.235.2353 etc are called floating point numbers Let's store a float number into variable 'num' as:\par
+\b num = 45.98464\par
+\b0\par
+Here num is called float type variable since it is storing floatng point value Floating point number can also be written in scientific notation where we use 'e' or 'E' to represent the power of 10 For example\par
+x = 22.55e8\par
+\fs22\par
+
+\pard\qc\b\fs24 - Complex Datatype\par
+\par
+
+\pard\b0 A complex number is number that is written in the form of\par
+a + dj or a + dJ. Here 'a' represents the real part of the number and 'b' represents the imaginary part of the number The suffix 'j' or 'J' indicates the square root value of -1 The parts 'a' and 'b' may contain integer or floats For example,\par
+5+8j, -3+9J , 0.2+10.5J are all complex numbers.\par
+\fs22\par
+
+\pard\qc\b\fs24 - Bool Datatype\par
+\par
+
+\pard\b0 The bool datatype in python represents  Boolean values. There are only two boolean values True or False that can be represent by this datatype. Python internally represents True as 1 and False as 0. A blank string like "" also represented as False. Condition  will be evaluated interally to either  True or False\ul . \b Example is given in datatype in python file\b0 ..\par
+\ulnone\fs22\par
+
+\pard\qc\b\fs30 2.Sequence in python\par
+\b0\par
+
+\pard\fs24 Generally, a sequences represents a group of elements or items. For example, a group of integer numbers will a sequence. There are six type of sequence in Python:\par
+1.str\par
+2.bytes\par
+3.bytearray\par
+4.list \par
+5.tuple\par
+6.range\par
+\par
+
+\pard\qc\b\fs26 - str Datatype\par
+\fs24\par
+
+\pard\b0 In Python, str represents string datatypes. A string is represented by a group of characters String are enclosed in single or quotes  Both are valid. \ul\b Example is given in datatype in python file..\par
+\ulnone\b0\par
+str = "python"\par
+str = 'python'\par
+str = '''python'''\par
+\par
+
+\pard\qc\b\fs26 - bytes\par
+\par
+
+\pard\b0\fs24 The bytes datatype represents a group of byte numbers. just like an array does. A byte numbers is any positive  integer from 0 to 255(inclusive). bytes array can store numbers in the range from 0 to 255 and it cannot even store negative numbers. \ul\b Example is given in datatype in python file..\par
+\ulnone\par
+elements = [10, 25, 0, 45 , 255, 10] # this is a list of bytes numbers\par
+x = bytes(elements) # convert the list into bytes array \par
+print(x[0]) # display 0 element, i.e 10\par
+\par
+\b0 We cannot modify or edit any element in the bytes type array. For Example x[0] = 55 given error. Here are tyring to replace 0 elemet (i.e 10) by 55 which is not allowed.\par
+\par
+\par
+Now, let's write a Python program to create a bytes type array with a group of elements and then display the elements using a for loop. in this program, we are using a for loop as:\par
+\par
+\b for i in x: print(i)\par
+\par
+\b0 it means, if 'i' is found in the array 'x' then display i value using \b print(i) \b0 function. Remember we need not declare the datatype of variable in Python Hence we need not tell which type of variable 'i' is in the above loop 'i' stores each element of the array 'x' and with every element print(i) will be executed once. hence print(i) displays all elements of the array 'x' we will discuss for loop in detail in the next chapter. \par
+\par
+
+\pard\qc\b - bytearray Datatype\par
+\par
+
+\pard\b0 The bytearray datatype is similar to bytes datatype. The different is that the bytes type array cannot be modified but the bytearray type array can be modified It means any element or all the elements of the bytearray type can be modified To create a bytearray type array we can use the function bytearray as: \ul\b Example is given in datatype in python file..\par
+\par
+\ulnone\b0 We will write program to create a bytearray type array then modify the first two elements. Then we will display all the elements using a for loop. This can be seen in next program : \ul\b Example is given in datatype in python file..\par
+\par
+
+\pard\qc\ulnone - list datatype\par
+\par
+
+\pard\b0 List in python are similar to array in c and java. A list represents a group of elements The main different between a list and an array is that a list can store different types of elements but an array can be store only one type of element. Also lists can grow dynamically in memory but the size of arrays is fixed and they cannot grow ar runtime Lists are represented using square brackets [] and the elements are written in [], separated by commas. For example\par
+\ul\b\par
+\ulnone list = [10, -20, 15.5, 'roshan', 'bala']\par
+\par
+\b0 will create a list with different type of elements. The slicing operation like [0: 3] represents elements from 0 to 2 positions, i.e 10, 20, 15.5 Have a look at some of the operation on list in.. \ul\b Datatype python file\par
+\par
+
+\pard\qc\ulnone - tuple Datatype\par
+\par
+
+\pard\b0 A tuple is similar to a list. A list contains a group of elements which can be of different types. The elements in the tuple are separated by commas and enclosed in parentheses(). Whereas the list elements can be modified, it is not possible to modify the tuple elements. That means a tuple can be treated as read-only list.     \ul\b Example is given in datatype in python file..\par
+\par
+tpl = (10, -20, 15.5, 'roshan', 'bala')\par
+\par
+\par
+
+\pard\qc\ulnone - range Datatype\par
+\par
+
+\pard\b0 The range datatype represents a sequence of numbers. The numbers in the range are not modifiable. Generally range is used for repeating a for loop for a specific numbers of times To create a range of numbers we can simply write:\par
+\par
+\b r = range(10)\par
+\par
+\b0 Here the range object is created with the numbers starting from 0 to 9 We can display these numbers using a for loop as:\par
+\par
+\b for i in r: print(i)\par
+\par
+\b0 We can use a starting number an ending number and  a step value in the range object as:\par
+\par
+\b r = range(30, 20, 2) \par
+\ul Example is given in datatype in python file..\par
+\par
+\par
+
+\pard\qc\ulnone - sets Datatype\par
+\par
+
+\pard\b0 A set is an unordered collection of elements much like a set in mathematics The order of elements is not maintained in the sets It means the elements may not appear in the same order as they are entered into the set moreover a set does not accept duplicate elements There are two sub type in sets:\par
+- set datatype\par
+- frozenset datatype\par
+\par
+
+\pard\qc\b -set Datatype\par
+\par
+
+\pard\b0 To create a set we should enter the elements separate by commas inside curly braces\{\}\par
+\par
+s = \{10, 20, 30, 20, 50\}\par
+print(s)\par
+\par
+
+\pard\qc\b - frozenset Datatype\par
+\par
+
+\pard\b0 The frozenset datatype is same as the set datatype The main different is that the elements in the set datatype can be modified whereas the elements of frozenset cannot be modified we can create a frozenset datatype by passing a set to frozenset() function as:\par
+\ul\b Example is given in datatype in python file..\par
+\par
+
+\pard\qc\ulnone - Mapping Datatype\par
+\par
+
+\pard\b0 A map represents a group of elements in the form of key value pairs so that when the key is given we can retrieve the value associated with it The dict datatype is an example for a map The 'dict' represents a 'dictionary' that contains pairs of elements such that the first element represents the key and the next one become its value the key and its value should be separated by a colon (:) and every pair should be separated  by a commas All the elements should be enclosed inside curry \par
+bracket \{\}.\par
+\ul\b Example is given in datatype in python file..\par
+\ulnone\b0\par
+\par
+\b\par
+\b0\par
+\par
+\ul\b\par
+\ulnone\b0\par
+\par
+\par
+\b\par
+\par
+
+\pard\qc\par
+\b0\par
+
+\pard\fs22\par
+\par
+}
+ 
